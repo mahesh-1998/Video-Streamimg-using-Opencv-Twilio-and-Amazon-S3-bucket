@@ -1,5 +1,5 @@
 # USAGE
-# python detect.py --conf config/config.json
+# python CloudApp.py --conf config/config.json
 
 # import the necessary packages
 from __future__ import print_function
@@ -17,11 +17,6 @@ import time
 import cv2
 import sys
 
-# function to handle keyboard interrupt
-def signal_handler(sig, frame):
-	print("[INFO] You pressed `ctrl + c`! Closing mail detector" \
-		" application...")
-	sys.exit(0)
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
