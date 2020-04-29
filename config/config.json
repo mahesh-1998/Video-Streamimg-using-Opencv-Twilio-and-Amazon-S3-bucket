@@ -1,0 +1,15 @@
+//https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html
+
+	// variables to store your aws account credentials
+	"aws_access_key_id": "enter aws s3 key",
+	"aws_secret_access_key": "enter secret access key",
+	"s3_bucket": "enter bucket name",
+
+//
+https://www.twilio.com/docs/sms/quickstart/python-msg-svc
+	// variables to store your twilio account credentials
+	"twilio_sid": "enter your twilio sid",
+	"twilio_auth": "entern auth token",
+	"twilio_to": "enter your register mobile no",
+	"twilio_from": "enter your twilio account number"
+}
