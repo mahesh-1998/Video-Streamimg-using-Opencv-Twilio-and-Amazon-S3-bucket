@@ -51,9 +51,6 @@ class TwilioNotifier:
 		url = "https://s3-{}.amazonaws.com/{}/{}".format(location,
 			self.conf["s3_bucket"], filename)
 		print("Output file availabel at:" + url)
-		#account_sid = 'ACc1411cf133899ab3f635e2aae15e5148'
-		#auth_token = 'ec0b133f92b64fd399f06484671d7359'
-		#client = Client(account_sid, auth_token)
 		client = Client(self.conf["twilio_sid"], self.conf["twilio_auth"])
 		message = client.messages.create(
 				              body=msg+"\nDownload link:"+url,
